@@ -1,0 +1,22 @@
+<div class="container">
+  <br />
+  <h3>When Bad Things Happen to Good Observables...</h3>
+  <br />
+  <p>
+    Here's the <a target="_blank" href="http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-subscribe">documentation</a> on Observable.subscribe()
+  </p>
+  <br />
+  <div class="row">
+    <div class="col-md-6">
+      <button (click)="useObservableWithComplete()">Use Complete</button><br />
+      <span *ngIf="observable1Processing">Processing...</span><br />
+      {{observable1Error}}
+    </div>
+    <div class="col-md-6">
+      <button (click)="useObservableWithFinalize()">Use Finalize</button><br />
+      <span *ngIf="observable2Processing">Processing...</span><br />
+      {{observable2Error}}
+    </div>
+  </div>
+</div>
+

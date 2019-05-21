@@ -7,11 +7,13 @@ import { InitExampleComponent } from './init-example/init-example.component';
 import { ConfigService } from './config/config.service';
 import { environment } from 'src/environments/environment.prod';
 import { WidgetService } from './widget.service';
+import { ObservableFinalizeComponent } from './observable-finalize/observable-finalize.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    InitExampleComponent
+    InitExampleComponent,
+    ObservableFinalizeComponent
   ],
   imports: [
     BrowserModule,
