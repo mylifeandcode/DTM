@@ -30,6 +30,16 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to AngularDemos!');
+    expect(compiled.querySelector('h3').textContent).toContain('DTM Angular Demos');
+  });
+
+  it('should include a link to GitHub', () => {
+    //This test is just as a POC to show Quven how to get the attribute of an anchor tag in a unit test
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const githubLink = fixture.debugElement.nativeElement.querySelector('.githubLink');
+    console.log("githubLink: ", githubLink);
+    console.log("attributes: ", githubLink.attributes);
+    console.log("href: ", githubLink.attributes["href"]);
   });
 });
