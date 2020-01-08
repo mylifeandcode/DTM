@@ -41,5 +41,6 @@ describe('AppComponent', () => {
     console.log("githubLink: ", githubLink);
     console.log("attributes: ", githubLink.attributes);
     console.log("href: ", githubLink.attributes["href"]);
+    expect(githubLink.attributes["href"].value).toEqual("https://github.com/mylifeandcode/DTM");
   });
 });
