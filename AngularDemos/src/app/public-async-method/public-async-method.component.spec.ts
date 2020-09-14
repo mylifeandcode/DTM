@@ -35,7 +35,7 @@ describe('PublicAsyncMethodComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  fit('should call the WidgetService getCode() method 3 times when we call saveAll()', fakeAsync(() => {
+  it('should call the WidgetService getCode() method 3 times when we call saveAll()', fakeAsync(() => {
 
     //ARRANGE
     let widgetService: WidgetService = TestBed.get(WidgetService);
