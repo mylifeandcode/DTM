@@ -8,12 +8,14 @@ import { ConfigService } from './config/config.service';
 import { environment } from 'src/environments/environment.prod';
 import { WidgetService } from './widget.service';
 import { ObservableFinalizeComponent } from './observable-finalize/observable-finalize.component';
+import { PublicAsyncMethodComponent } from './public-async-method/public-async-method.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InitExampleComponent,
-    ObservableFinalizeComponent
+    ObservableFinalizeComponent,
+    PublicAsyncMethodComponent
   ],
   imports: [
     BrowserModule,
